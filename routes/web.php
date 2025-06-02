@@ -27,4 +27,4 @@ Route::get('/home', [HomeController::class, 'index'])->name('home');
 
 
 // dashboard route
-Route::get('admin_dash',[])
+// Route::get('admin_dash',[])
