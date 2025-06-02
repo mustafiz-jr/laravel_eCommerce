@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 class DashController extends Controller
 {
     public function admin_dash(){
-        return view('');
+        return view('pages.dashboard');
     }
 }
   

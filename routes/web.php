@@ -1,6 +1,9 @@
 <?php
 
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\ProductController;
+use App\Http\Controllers\DashController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 /*
@@ -23,6 +26,7 @@ Auth::routes();
 Route::get('/home', [HomeController::class, 'index'])->name('home');
 require('admin.php');
 require('customer.php');
+
 
 
 
