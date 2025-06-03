@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- Mirrored from admin.pixelstrap.net/admiro/template/dashboard-02.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 01 Jun 2025 18:41:07 GMT -->
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -53,7 +52,7 @@
     </div>
     <div class="page-wrapper compact-wrapper" id="pageWrapper">
         <header class="page-header row">
-            <div class="logo-wrapper d-flex align-items-center col-auto"><a href="index.html"><img
+            <div class="logo-wrapper d-flex align-items-center col-auto"><a href="{{ route('admin.dashboard') }}"><img
                         class="light-logo img-fluid" src="{{ asset('dash/images/logo/logo1.png') }}"
                         alt="logo" /><img class="dark-logo img-fluid"
                         src="{{ asset('dash/images/logo/logo-dark.png') }}" alt="logo" /></a><a
@@ -112,18 +111,16 @@
                                 </ul>
                             </div>
                         </li>
-                        <li class="search d-lg-none d-flex"> <a href="javascript:void(0)">
-                                <svg>
-                                    <use href="https://admin.pixelstrap.net/admiro/dash/svg/iconly-sprite.svg#Search">
-                                    </use>
-                                </svg></a></li>
+                      
                         <li> <a class="dark-mode" href="javascript:void(0)">
                                 <svg>
                                     <use
                                         href="https://admin.pixelstrap.net/admiro/dash/svg/iconly-sprite.svg#moondark">
                                     </use>
                                 </svg></a></li>
-                        <li class="custom-dropdown"><a href="javascript:void(0)">
+
+                                {{-- cart modal --}}
+                        {{-- <li class="custom-dropdown"><a href="javascript:void(0)">
                                 <svg>
                                     <use
                                         href="https://admin.pixelstrap.net/admiro/dash/svg/iconly-sprite.svg#cart-icon">
@@ -183,7 +180,7 @@
                                             href="checkout.html">Checkout</a></li>
                                 </ul>
                             </div>
-                        </li>
+                        </li> --}}
                         <li class="custom-dropdown"><a href="javascript:void(0)">
                                 <svg>
                                     <use
