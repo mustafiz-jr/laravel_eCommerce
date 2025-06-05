@@ -16,6 +16,8 @@
  * Copyright 2011-2025 The Bootstrap Authors
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+
+
 :root,
 [data-bs-theme=light] {
   --bs-blue: #0d6efd;
@@ -527,7 +529,7 @@ select:disabled {
 }
 
 [list]:not([type=date]):not([type=datetime-local]):not([type=month]):not([type=week]):not([type=time])::-webkit-calendar-picker-indicator {
-  display: none !important;
+  display: none  !important;
 }
 
 button,
@@ -13789,51 +13791,7 @@ fieldset:disabled .btn {
   --landing-footer-bg: #11312E;
 }
 
-.dark-only,
-.dark-sidebar .logo-wrapper,
-.dark-sidebar .page-sidebar {
-  --black: #ffffff;
-  --white: #181919;
-  --font-color: #7c7a7a;
-  --dark: #9d9999;
-  --body-font-color: #e2e2e2;
-  --light-gray-color: #f1f1f1;
-  --gray-700: #a7a7a7;
-  --gray2: #5f5f5f;
-  --gray-60: #858585;
-  --shape-border: #474545;
-  --span-color: #1D1D1D;
-  --scrollbar-color: #eee;
-  --body-color: #0e0f0f;
-  --light-border: #474545;
-  --light-gray: #474545;
-  --sub-title: #B6B0B0;
-  --border-color: #474545;
-  --gray-200: #313131;
-  --active-bg-color: #1D1D1D;
-  --bg-light: #0e0f0f;
-  --light-semi-gray: #0e0f0f;
-  --alert-light-light: #181919;
-  --theme-body-font-color: #B6B0B0;
-  --light-background: #0e0f0f;
-  --light-color: #0e0f0f;
-  --dropdown-menu: #ffffff;
-  --border-light-color: #474545;
-  --timline-dot-line: #B6B0B0;
-  --bs-tertiary-bg: #181919;
-  --bs-body-bg: #181919;
-  --bs-heading-color: #c6c6c6;
-  --bs-body-color: #B6B0B0;
-  --bs-border-color: #474545;
-  --bs-white-rgb: #0e0f0f;
-  --bs-popover-header-bg: #0e0f0f;
-  --bs-toast-header-bg: #0e0f0f;
-  --bs-secondary-color: #B6B0B0;
-  --bs-btn-color: #B6B0B0;
-  --bs-btn-active-color: #B6B0B0;
-  --bs-nav-tabs-link-hover-border-color: #e9ecef;
-}
-
+.
 /**=====================
      mixins
 ==========================**/
@@ -14360,6 +14318,11 @@ input:focus {
 
 .border-b-primary {
   border-bottom: 1px solid var(--theme-default) !important;
+}
+
+#sidebar_links li {
+  font-size: 25px !important;
+  color: yellow;
 }
 
 .b-l-primary {
@@ -14997,9 +14960,6 @@ input:focus {
      Reset css end
 ==========================**/
 /**==only sidebar dark==**/
-.dark-sidebar .page-sidebar .logo-wrapper {
-  background-color: var(--body-color);
-}
 
 .dark-only .page-sidebar .logo-wrapper {
   background-color: var(--body-color);
