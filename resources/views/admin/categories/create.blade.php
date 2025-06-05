@@ -4,6 +4,7 @@
 
 @section('create_category')
     <br>
+    <h1 class="text-center">Create Your Category</h1>
     <br>
     <div class="container my-5 px-4" style="height: 65vh">
         <form id="categoryForm" method="POST" action="">
