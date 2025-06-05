@@ -3,8 +3,8 @@
 
 
 @section('create_category')
-<br>
-<br>
+    <br>
+    <br>
     <div class="container my-5 px-4" style="height: 65vh">
         <form id="categoryForm" method="POST" action="">
             @csrf
