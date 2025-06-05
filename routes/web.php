@@ -18,12 +18,12 @@ use Illuminate\Support\Facades\Route;
 */
 
 // Route::get('/', function () {
-//     return view('welcome');
+    // return view('welcome');
 // });
 
 Auth::routes();
 
-Route::get('/', [HomeController::class, 'index'])->name('home');
+// Route::get('/', [HomeController::class, 'index'])->name('home');
 require('admin.php');
 require('customer.php');
 

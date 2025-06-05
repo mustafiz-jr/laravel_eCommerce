@@ -12,9 +12,7 @@
         content="admin template, Admiro admin template, best javascript admin, dashboard template, bootstrap admin template, responsive admin template, web app" />
     <meta name="author" content="pixelstrap" />
     <title>Admiro - Premium Admin Template</title>
-    <!-- Favicon icon-->
-    <link rel="icon" href="{{ asset('dash/images/favicon.png') }}')}}" type="image/x-icon" />
-    <link rel="shortcut icon" href="{{ asset('dash/images/favicon.png') }}" type="image/x-icon" />
+
     <!-- Google font-->
     <link rel="preconnect" href="https://fonts.googleapis.com/" />
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
@@ -29,7 +27,9 @@
     <!-- iconly-icon-->
     <link rel="stylesheet" href="{{ asset('dash/css/themify.css') }}" />
     <!--fontawesome-->
-    <link rel="stylesheet" href="{{ asset('dash/css/fontawesome-min.css') }}" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Whether Icon css-->
     <link rel="stylesheet" type="text/css" href="{{ asset('dash/css/vendors/weather-icons/weather-icons.min.css') }}" />
     <link rel="stylesheet" type="text/css" href="{{ asset('dash/css/vendors/scrollbar.css') }}" />
@@ -55,11 +55,9 @@
             <div class="logo-wrapper d-flex align-items-center col-auto"><a href="{{ route('admin.dashboard') }}"><img
                         class="light-logo img-fluid" src="{{ asset('dash/images/logo/logo1.png') }}"
                         alt="logo" /><img class="dark-logo img-fluid"
-                        src="{{ asset('dash/images/logo/logo-dark.png') }}" alt="logo" /></a><a
-                    class="close-btn toggle-sidebar" href="javascript:void(0)">
-                    <svg class="svg-color">
-                        <use href="https://admin.pixelstrap.net/admiro/dash/svg/iconly-sprite.svg#Category"></use>
-                    </svg></a></div>
+                        src="{{ asset('dash/images/logo/logo-dark.png') }}" alt="logo" /></a>
+                <a class="close-btn toggle-sidebar" href="javascript:void(0)"><i class="bi bi-layout-sidebar"></i></a>
+            </div>
             <div class="page-main-header col">
                 <div class="header-left">
                     <form class="form-inline search-full col" action="#" method="get">
@@ -81,8 +79,8 @@
                         <div class="Typeahead Typeahead--twitterUsers">
                             <div class="u-posRelative d-flex align-items-center">
                                 <input class="demo-input py-0 Typeahead-input form-control-plaintext w-100"
-                                    type="text" placeholder="Type to Search..." name="q"
-                                    title="" /><i class="search-bg iconly-Search icli"></i>
+                                    type="text" placeholder="Type to Search..." name="q" title="" /><i
+                                    class="search-bg iconly-Search icli"></i>
                             </div>
                         </div>
                     </div>
@@ -111,76 +109,6 @@
                                 </ul>
                             </div>
                         </li>
-                      
-                        <li> <a class="dark-mode" href="javascript:void(0)">
-                                <svg>
-                                    <use
-                                        href="https://admin.pixelstrap.net/admiro/dash/svg/iconly-sprite.svg#moondark">
-                                    </use>
-                                </svg></a></li>
-
-                                {{-- cart modal --}}
-                        {{-- <li class="custom-dropdown"><a href="javascript:void(0)">
-                                <svg>
-                                    <use
-                                        href="https://admin.pixelstrap.net/admiro/dash/svg/iconly-sprite.svg#cart-icon">
-                                    </use>
-                                </svg></a><span class="badge rounded-pill badge-primary">2</span>
-                            <div class="custom-menu cart-dropdown py-0 overflow-hidden">
-                                <h3 class="title dropdown-title">Cart</h3>
-                                <ul class="pb-0">
-                                    <li>
-                                        <div class="d-flex"><img class="img-fluid b-r-5 me-3 img-60"
-                                                src="{{ asset('dash/images/dashboard-2/1.png') }}" alt="" />
-                                            <div class="flex-grow-1"><span class="f-w-600">Watch multicolor</span>
-                                                <div class="qty-box">
-                                                    <div class="input-group"><span class="input-group-prepend">
-                                                            <button class="btn quantity-left-minus" type="button"
-                                                                data-type="minus" data-field="">-</button></span>
-                                                        <input class="form-control input-number" type="text"
-                                                            name="quantity" value="1" /><span
-                                                            class="input-group-prepend">
-                                                            <button class="btn quantity-right-plus" type="button"
-                                                                data-type="plus" data-field="">+</button></span>
-                                                    </div>
-                                                </div>
-                                                <h6 class="font-primary">$500</h6>
-                                            </div>
-                                            <div class="close-circle"><a class="bg-danger" href="#"><i
-                                                        data-feather="x"></i></a></div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="d-flex"><img class="img-fluid b-r-5 me-3 img-60"
-                                                src="{{ asset('dash/images/dashboard-2/2.png') }}" alt="" />
-                                            <div class="flex-grow-1"><span class="f-w-600">Airpods</span>
-                                                <div class="qty-box">
-                                                    <div class="input-group"><span class="input-group-prepend">
-                                                            <button class="btn quantity-left-minus" type="button"
-                                                                data-type="minus" data-field="">-</button></span>
-                                                        <input class="form-control input-number" type="text"
-                                                            name="quantity" value="1" /><span
-                                                            class="input-group-prepend">
-                                                            <button class="btn quantity-right-plus" type="button"
-                                                                data-type="plus" data-field="">+</button></span>
-                                                    </div>
-                                                </div>
-                                                <h6 class="font-primary">$500.00</h6>
-                                            </div>
-                                            <div class="close-circle"><a class="bg-danger" href="#"><i
-                                                        data-feather="x"></i></a></div>
-                                        </div>
-                                    </li>
-                                    <li class="total">
-                                        <h6 class="mb-0">Order Total : <span class="f-w-600">$1000.00</span></h6>
-                                    </li>
-                                    <li class="text-center"><a class="d-block mb-3 view-cart f-w-700 text-primary"
-                                            href="cart.html">Go to your cart</a><a
-                                            class="btn btn-primary view-checkout text-white"
-                                            href="checkout.html">Checkout</a></li>
-                                </ul>
-                            </div>
-                        </li> --}}
                         <li class="custom-dropdown"><a href="javascript:void(0)">
                                 <svg>
                                     <use
@@ -1060,10 +988,9 @@
                             </div>
                             <div class="col-sm-6 col-12">
                                 <ol class="breadcrumb">
-                                    <li class="breadcrumb-item"><a href="index.html"><i
-                                                class="iconly-Home icli svg-color"></i></a></li>
-                                    <li class="breadcrumb-item">Dashboard</li>
-                                    <li class="breadcrumb-item active">Ecommerce</li>
+                                    <li class="breadcrumb-item"><a
+                                            href="{{ route('admin.dashboard') }}">Dashboard</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">Ecommerce</li>
                                 </ol>
                             </div>
                         </div>
