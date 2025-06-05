@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+
+
 /*! -----------------------------------------------------------------------------------
 
     Template Name: Admiro Admin
@@ -18023,11 +18025,7 @@ input:focus {
   color: var(--white) !important;
 }
 
-.breadcrumb-page .breadcrumb-style2 .breadcrumb-item+.breadcrumb-item::before {
-  content: ">";
-  width: 16px;
-  text-align: center;
-}
+
 
 .breadcrumb-page .breadcrumb-style4 .breadcrumb-item i {
   padding: 5px 6px;

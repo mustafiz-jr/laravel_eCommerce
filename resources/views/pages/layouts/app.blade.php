@@ -56,7 +56,7 @@
                         class="light-logo img-fluid" src="{{ asset('dash/images/logo/logo1.png') }}"
                         alt="logo" /><img class="dark-logo img-fluid"
                         src="{{ asset('dash/images/logo/logo-dark.png') }}" alt="logo" /></a>
-                <a class="close-btn toggle-sidebar" href="javascript:void(0)"><i class="bi bi-layout-sidebar"></i></a>
+                <a class="close-btn toggle-sidebar" href="javascript:void(0)"><i class="fa-solid fa-bars"></i></a>
             </div>
             <div class="page-main-header col">
                 <div class="header-left">
@@ -988,8 +988,9 @@
                             </div>
                             <div class="col-sm-6 col-12">
                                 <ol class="breadcrumb">
-                                    <li class="breadcrumb-item"><a
-                                            href="{{ route('admin.dashboard') }}">Dashboard</a></li>
+                                    <li class="breadcrumb-items active "><a class="text-info"
+                                            href="{{ route('admin.dashboard') }}">Dashboard</a></li><span
+                                        class="mx-1 text-info">/</span>
                                     <li class="breadcrumb-item active" aria-current="page">Ecommerce</li>
                                 </ol>
                             </div>
