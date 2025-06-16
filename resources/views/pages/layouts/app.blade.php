@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Sohoj Shop</title>
+    <title>Mustafiz eCommerce</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/fontawesome.min.css"
@@ -16,8 +16,10 @@
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="{{ asset('customer/css/owl.carousel.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('customer/css/owl.theme.default.css') }}">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
 
     <link rel="stylesheet" href="{{ asset('customers/css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('customers/css/style.css') }}">
@@ -79,9 +81,6 @@
                         </a>
                     </div>
                     <div>
-                        <!-- <a href="">
-       <i class="far fa-user"></i>
-      </a> -->
 
                         <div class="dropdown dropleft user-dropdown">
                             <button class=" dropdown-toggle border-0  header-user-btn" type="button"
@@ -189,23 +188,23 @@
                     </ol>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img class="d-block w-100" src="images/hero/image-2.jpg" alt="First slide">
+                            <img class="d-block w-100" src="https://ebdsolution.com/wp-content/uploads/2022/12/best-gaming-laptop-model-entry-header-opt.jpg" alt="First slide">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block w-100" src="images/hero/image-1.jpeg" alt="Second slide">
+                            <img class="d-block w-100" src="https://cdn.thewirecutter.com/wp-content/media/2024/09/iphone-2048px-6990.jpg?auto=webp&quality=75&width=1024" alt="Second slide">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block w-100" src="images/hero/image-1.jpeg" alt="Third slide">
+                            <img class="d-block w-100" src="https://elchapuzasinformatico.com/wp-content/uploads/2024/11/Apple-vende-mas-iPhone-16-que-iPhone-15-en-el-mismo-periodo-de-tiempo.jpg	" alt="Third slide">
                         </div>
                     </div>
-                    <!-- <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    {{-- <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       <span class="sr-only">Previous</span>
      </a>
      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="sr-only">Next</span>
-     </a> -->
+     </a>  --}}
                 </div>
             </div>
         </div>
@@ -479,8 +478,9 @@
                 </div>
             </div>
 
-
         </div>
+
+
         <div class="mx-auto all-products">
 
             <a href="" class="btn btn-primary">View All Products</a>
@@ -506,40 +506,40 @@
         <div class="owl-carousel category mt-5">
 
             <div class="category-box">
-                <img src="images/categories/CellPhone.png" alt="Phones">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWIZYNsZMfg6VBiuGdAg59JgcNkfXwOyxpIA&s" alt="Phones">
                 <p>Phones</p>
             </div>
             <div class="category-box">
-                <img src="images/categories/Camera.png" alt="Phones">
+                <img src="https://i0.wp.com/camerabazar.net/wp-content/uploads/2024/03/Canon-eos-R100.jpeg" alt="Phones">
                 <p>Camera</p>
             </div>
             <div class="category-box">
-                <img src="images/categories/Computer.png" alt="Phones">
+                <img src="https://sm.pcmag.com/pcmag_uk/photo/l/lenovo-leg/lenovo-legion-tower-7i-gen-8-2024_rg7h.jpg" alt="Phones">
                 <p>Computer</p>
             </div>
             <div class="category-box">
-                <img src="images/categories/Gamepad.png" alt="Phones">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjlDyhylKoZuj8DbJ-bdTaXqRxJGN3vAbSZw&s" alt="Phones">
                 <p>Gamepad</p>
             </div>
             <div class="category-box">
-                <img src="images/categories/Headphone.png" alt="Phones">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkbbG5kD726502-oCNBAu0UyAuP9jlAFmrpg&s" alt="Phones">
                 <p>Headphone</p>
             </div>
             <div class="category-box">
-                <img src="images/categories/SmartWatch.png" alt="Phones">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1jwsOYXnQxGyzSC3mIfg1pjXHa89ItYymQQ&s" alt="Phones">
                 <p>SmartWatch</p>
             </div>
             <div class="category-box">
-                <img src="images/categories/CellPhone.png" alt="Phones">
-                <p>Phones</p>
+                <img src="https://www.caseking.de/dw/image/v2/BKRR_PRD/on/demandware.static/-/Sites-master-catalog-caseking/default/dwbb7609e9/images/pim/SIPC/SIPC-685/SIPC-685_7ed12945375b63141948b9f1e37cec47fa03f4cc.jpg?sw=731" alt="Phones">
+                <p>PC </p>
             </div>
             <div class="category-box">
-                <img src="images/categories/CellPhone.png" alt="Phones">
-                <p>Phones</p>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNiuOSdwV5VxNk7JlCd832wnWzFpTGzkN1ig&s" alt="Phones">
+                <p>Cosmetics</p>
             </div>
             <div class="category-box">
-                <img src="images/categories/CellPhone.png" alt="Phones">
-                <p>Phones</p>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEyCe7j7GA3SzDm5lK8mBaRthbU-qnKoQTag&s" alt="Phones">
+                <p>Watches</p>
             </div>
 
 
@@ -989,8 +989,8 @@
         </div>
 
         <div class=" mt-5 new-arrival ">
-            <div class="featured-image " style="background-image: url(images/featured/image.jpg);">
-                <div>
+            <div class="featured-image " style="background-image: url('https://hips.hearstapps.com/hmg-prod/images/esq240112-digital-ecomm-playstationps5-0305-679133a09328d.jpg?crop=0.569xw:0.853xh;0.221xw,0.0337xh&resize=1200:*');">
+                <div class="text-danger">
                     <h4>PlayStation 5</h4>
                     <p>Black and White version of the PS5 coming out on sale.</p>
                     <a href="">Shop Now</a>
@@ -1000,8 +1000,8 @@
             <div class="w-50 ">
 
                 <div class="featured-image featured-second "
-                    style="background-image: url(images/featured/image-2.jpeg);">
-                    <div>
+                    style="background-image: url('https://thumbs.dreamstime.com/b/background-beauty-make-up-cosmetic-care-yellow-generative-ai-273600122.jpg');">
+                    <div class="text-success">
                         <h4>Women’s Collections</h4>
                         <p>Featured woman collections that give you another vibe.</p>
                         <a href="">Shop Now</a>
@@ -1011,8 +1011,8 @@
 
                 <div class="d-flex new-arrival">
                     <div class="w-50 mt-4 featured-image featured-third"
-                        style="background-image: url(images/featured/image-3.jpg);">
-                        <div>
+                        style="background-image: url('https://img.joomcdn.net/0ef6267e12d4e992e4869f1283a36046d62de76f_original.jpeg');">
+                        <div class="text-danger">
                             <h4>Speakers</h4>
                             <p>Amazon wireless speakers</p>
                             <a href="">Shop Now</a>
@@ -1020,8 +1020,8 @@
                     </div>
 
                     <div class="w-50 mt-4 featured-image featured-third ml-4"
-                        style="background-image: url(images/featured/image-4jpg);">
-                        <div>
+                        style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTr45MOu6f-jHjg2Ls-KLt2wiIUO3JPikaEKQ&s');">
+                        <div class="text-danger">
                             <h4>Perfume</h4>
                             <p>GUCCI INTENSE OUD EDP</p>
                             <a href="">Shop Now</a>
@@ -1139,15 +1139,15 @@
         integrity="sha512-b+nQTCdtTBIRIbraqNEwsjB6UvL3UEMkXnhzd8awtCYh0Kcsjl9uEgwVFVbhoj3uu1DO1ZMacNvLoyJJiNfcvg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <script src="js/jquery.min.js"></script>
-    <script src="js/popper.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/plugins/multi-countdown.js"></script>
-    <script src="js/plugins/owl.carousel.min.js"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="{{ asset('customers/js/popper.js') }}"></script>
+    <script src="{{ asset('customers/js/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('customers/js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ asset('customers/js/plugins/multi-countdown.js') }}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
-    <script src="js/main.js"></script>
+    <script src="{{ asset('customers/js/main.js') }}"></script>
 
     <script>
         function toggleSubmenu(id) {
@@ -1178,6 +1178,9 @@
     <script>
         $('.hero_count').attr('data-date', dateText);
     </script>
+
+
+
     <script>
         $('.flash_sale').owlCarousel({
             loop: true,
@@ -1203,8 +1206,9 @@
                     loop: false
                 }
             }
-        })
+        });
     </script>
+
     <script>
         $('.category').owlCarousel({
             loop: true,

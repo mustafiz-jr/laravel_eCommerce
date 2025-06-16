@@ -315,14 +315,16 @@
                         <ul class="list-group list-group-flush" id="sidebar_links">
                             <li class="list-group-item"><a class="fs-5"
                                     href="{{ route('admin.dashboard') }}">Dashboard</a></li>
-                            <li class="list-group-item"><a class="fs-5" href="{{route('admin.categories.index')}}">Categories</a></li>
+                            <li class="list-group-item"><a class="fs-5"
+                                    href="{{ route('admin.categories.index') }}">Categories</a></li>
                             <li class="list-group-item"><a class="fs-5" href="">Products</a></li>
                             <li class="list-group-item"><a class="fs-5" href="">Orders</a></li>
                             <li class="list-group-item"><a class="fs-5" href="">Manage Users </a></li>
                             <li class="list-group-item"><a class="fs-5" href="">Customers </a></li>
                             <li class="list-group-item"><a class="fs-5" href="">Payments </a></li>
                             <li class="list-group-item"><a class="fs-5" href="">Contacts </a></li>
-                            <li class="list-group-item"><a class="fs-5" href="{{route('logout')}}">Logout </a></li>
+                            <li class="list-group-item"><a class="fs-5" href="{{ route('logout') }}">Logout </a>
+                            </li>
 
                         </ul>
 
@@ -336,9 +338,9 @@
             {{--  --}}
             {{--  --}}
 
-@yield('dashboard_content')
-@yield('category_table')
-@yield('create_category')
+            @yield('dashboard_content')
+            @yield('category_table')
+            @yield('create_category')
 
             {{--  --}}
             {{--  --}}
