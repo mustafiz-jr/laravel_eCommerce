@@ -7,5 +7,5 @@ Route::group(['prefix' => 'customer-dashboard', 'middleware' => 'role:2', 'as' =
 
 
 
-    Route::get('/', [PageController::class, 'dashboard'])->name('dashboard');
+    Route::get('/', [PageController::class, 'home'])->name('home');
 });

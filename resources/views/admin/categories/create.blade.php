@@ -1,4 +1,5 @@
-@extends('pages.layouts.app')
+@extends('admin.pages.layouts.app')
+
 
 
 

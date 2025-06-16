@@ -1,5 +1,6 @@
 
-@extends('pages.layouts.app')
+@extends('admin.pages.layouts.app')
+
 
 
 @section('category_table')
