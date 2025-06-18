@@ -188,13 +188,19 @@
                     </ol>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img class="d-block w-100" src="https://ebdsolution.com/wp-content/uploads/2022/12/best-gaming-laptop-model-entry-header-opt.jpg" alt="First slide">
+                            <img class="d-block w-100"
+                                src="https://ebdsolution.com/wp-content/uploads/2022/12/best-gaming-laptop-model-entry-header-opt.jpg"
+                                alt="First slide">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block w-100" src="https://cdn.thewirecutter.com/wp-content/media/2024/09/iphone-2048px-6990.jpg?auto=webp&quality=75&width=1024" alt="Second slide">
+                            <img class="d-block w-100"
+                                src="https://cdn.thewirecutter.com/wp-content/media/2024/09/iphone-2048px-6990.jpg?auto=webp&quality=75&width=1024"
+                                alt="Second slide">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block w-100" src="https://elchapuzasinformatico.com/wp-content/uploads/2024/11/Apple-vende-mas-iPhone-16-que-iPhone-15-en-el-mismo-periodo-de-tiempo.jpg	" alt="Third slide">
+                            <img class="d-block w-100"
+                                src="https://elchapuzasinformatico.com/wp-content/uploads/2024/11/Apple-vende-mas-iPhone-16-que-iPhone-15-en-el-mismo-periodo-de-tiempo.jpg	"
+                                alt="Third slide">
                         </div>
                     </div>
                     {{-- <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -506,39 +512,48 @@
         <div class="owl-carousel category mt-5">
 
             <div class="category-box">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWIZYNsZMfg6VBiuGdAg59JgcNkfXwOyxpIA&s" alt="Phones">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWIZYNsZMfg6VBiuGdAg59JgcNkfXwOyxpIA&s"
+                    alt="Phones">
                 <p>Phones</p>
             </div>
             <div class="category-box">
-                <img src="https://i0.wp.com/camerabazar.net/wp-content/uploads/2024/03/Canon-eos-R100.jpeg" alt="Phones">
+                <img src="https://i0.wp.com/camerabazar.net/wp-content/uploads/2024/03/Canon-eos-R100.jpeg"
+                    alt="Phones">
                 <p>Camera</p>
             </div>
             <div class="category-box">
-                <img src="https://sm.pcmag.com/pcmag_uk/photo/l/lenovo-leg/lenovo-legion-tower-7i-gen-8-2024_rg7h.jpg" alt="Phones">
+                <img src="https://sm.pcmag.com/pcmag_uk/photo/l/lenovo-leg/lenovo-legion-tower-7i-gen-8-2024_rg7h.jpg"
+                    alt="Phones">
                 <p>Computer</p>
             </div>
             <div class="category-box">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjlDyhylKoZuj8DbJ-bdTaXqRxJGN3vAbSZw&s" alt="Phones">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjlDyhylKoZuj8DbJ-bdTaXqRxJGN3vAbSZw&s"
+                    alt="Phones">
                 <p>Gamepad</p>
             </div>
             <div class="category-box">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkbbG5kD726502-oCNBAu0UyAuP9jlAFmrpg&s" alt="Phones">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkbbG5kD726502-oCNBAu0UyAuP9jlAFmrpg&s"
+                    alt="Phones">
                 <p>Headphone</p>
             </div>
             <div class="category-box">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1jwsOYXnQxGyzSC3mIfg1pjXHa89ItYymQQ&s" alt="Phones">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1jwsOYXnQxGyzSC3mIfg1pjXHa89ItYymQQ&s"
+                    alt="Phones">
                 <p>SmartWatch</p>
             </div>
             <div class="category-box">
-                <img src="https://www.caseking.de/dw/image/v2/BKRR_PRD/on/demandware.static/-/Sites-master-catalog-caseking/default/dwbb7609e9/images/pim/SIPC/SIPC-685/SIPC-685_7ed12945375b63141948b9f1e37cec47fa03f4cc.jpg?sw=731" alt="Phones">
+                <img src="https://www.caseking.de/dw/image/v2/BKRR_PRD/on/demandware.static/-/Sites-master-catalog-caseking/default/dwbb7609e9/images/pim/SIPC/SIPC-685/SIPC-685_7ed12945375b63141948b9f1e37cec47fa03f4cc.jpg?sw=731"
+                    alt="Phones">
                 <p>PC </p>
             </div>
             <div class="category-box">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNiuOSdwV5VxNk7JlCd832wnWzFpTGzkN1ig&s" alt="Phones">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNiuOSdwV5VxNk7JlCd832wnWzFpTGzkN1ig&s"
+                    alt="Phones">
                 <p>Cosmetics</p>
             </div>
             <div class="category-box">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEyCe7j7GA3SzDm5lK8mBaRthbU-qnKoQTag&s" alt="Phones">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEyCe7j7GA3SzDm5lK8mBaRthbU-qnKoQTag&s"
+                    alt="Phones">
                 <p>Watches</p>
             </div>
 
@@ -989,7 +1004,8 @@
         </div>
 
         <div class=" mt-5 new-arrival ">
-            <div class="featured-image " style="background-image: url('https://hips.hearstapps.com/hmg-prod/images/esq240112-digital-ecomm-playstationps5-0305-679133a09328d.jpg?crop=0.569xw:0.853xh;0.221xw,0.0337xh&resize=1200:*');">
+            <div class="featured-image "
+                style="background-image: url('https://hips.hearstapps.com/hmg-prod/images/esq240112-digital-ecomm-playstationps5-0305-679133a09328d.jpg?crop=0.569xw:0.853xh;0.221xw,0.0337xh&resize=1200:*');">
                 <div class="text-danger">
                     <h4>PlayStation 5</h4>
                     <p>Black and White version of the PS5 coming out on sale.</p>
