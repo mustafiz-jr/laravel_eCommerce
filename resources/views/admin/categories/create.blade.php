@@ -8,15 +8,12 @@
     <h1 class="text-center">Create Your Category</h1>
     <br>
     <div class="container my-5 px-4" style="height: 65vh">
-        <form id="categoryForm" method="POST" action="">
+
+        <form method="POST" action="{{route('admin.categories.store')}}">
             @csrf
-            <div class="mb-3">
-                <label for="categoryName" class="form-label">Category Name</label>
-                <input type="text" class="form-control" id="categoryName" name="title" required>
-            </div>
-            <div class=" gap-2">
-                <button type="submit" class="btn btn-primary">Save Category</button>
-            </div>
+            @include('admin.categories.partials.form',[
+                'category'=>$category
+            ])
         </form>
     </div>
 @endsection
