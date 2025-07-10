@@ -3,7 +3,7 @@
 
 
 
-@section('create_category')
+@section('content')
     <br>
     <h1 class="text-center">Create Your Category</h1>
     <br>

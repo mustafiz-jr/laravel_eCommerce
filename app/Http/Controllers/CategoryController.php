@@ -10,7 +10,9 @@ class CategoryController extends Controller
 {
     public function index()
     {
-        return view('admin.categories.index');
+        $i = 1;
+        $categories = Category::all();
+        return view('admin.categories.index', compact('categories', 'i'));
     }
 
 
@@ -24,8 +26,24 @@ class CategoryController extends Controller
     {
         // dd($request->all());
         Category::create([
-            'title'=>$request->title,
-            'slug'=>Str::slug($request->title),
+            'title' => $request->title,
+            'slug' => Str::slug($request->title),
+        ]);
+        return back();
+    }
+
+    public function edit($id)
+    {
+        $category = Category::where('id', $id)->first();
+
+        return view('admin.categories.edit', compact('category'));
+    }
+
+    public function update(Request $request)
+    {
+        Category::update([
+            'title' => $request->title,
+            'slug' => Str::slug($request->title),
         ]);
         return back();
     }

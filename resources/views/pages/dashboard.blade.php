@@ -1,7 +1,7 @@
 @extends('admin.pages.layouts.app')
 
 
-@section('dashboard_content')
+@section('content')
     {{-- paig main content start --}}
     <div class="page-body">
         <div class="container-fluid">

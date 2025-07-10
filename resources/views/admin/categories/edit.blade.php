@@ -2,16 +2,17 @@
 
 
 
-@section('create_category')
+@section('content')
     <br>
-    <h1 class="text-center">Update Your Category</h1>
+    <h1 class="text-center">Create Your Category</h1>
     <br>
     <div class="container my-5 px-4" style="height: 65vh">
 
-         @include('admin.categories.partials.form',[
-                'category'=>$category
+        <form method="POST" action="{{ route('admin.categories.update', $category->id) }}">
+            @csrf
+            @include('admin.categories.partials.form', [
+                'category' => $category,
             ])
-       
-             
+        </form>
     </div>
 @endsection

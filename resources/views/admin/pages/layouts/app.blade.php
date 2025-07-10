@@ -338,9 +338,8 @@
             {{--  --}}
             {{--  --}}
 
-            @yield('dashboard_content')
-            @yield('category_table')
-            @yield('create_category')
+            @yield('content')
+            
 
             {{--  --}}
             {{--  --}}
