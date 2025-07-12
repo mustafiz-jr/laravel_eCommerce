@@ -29,22 +29,31 @@ class CategoryController extends Controller
             'title' => $request->title,
             'slug' => Str::slug($request->title),
         ]);
-        return back();
+        return redirect(route('admin.categories.index'));
     }
 
     public function edit($id)
     {
+        // dd('hello');
         $category = Category::where('id', $id)->first();
 
         return view('admin.categories.edit', compact('category'));
     }
 
-    public function update(Request $request)
+    public function update(Request $request, Category $category)
     {
-        Category::update([
+        $category->update([
             'title' => $request->title,
             'slug' => Str::slug($request->title),
         ]);
-        return back();
+        return redirect(route('admin.categories.index'));
+    }
+
+
+    public function destroy(Category $category)
+    {
+        $category->delete();
+
+        return redirect(route('admin.categories.index'));
     }
 }
