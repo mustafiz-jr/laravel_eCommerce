@@ -1,6 +1,7 @@
 @extends('admin.pages.layouts.app')
 
 
+
 @section('content')
     <div class="container mx-auto px-4 py-8">
         <div class=" mx-auto bg-white rounded-lg shadow-md overflow-hidden">
@@ -8,12 +9,12 @@
             <div class="bg-teal-600 px-6 py-4">
                 <h2 class="text-2xl font-bold text-white">Add New Product</h2>
             </div>
-
             <!-- Product Form -->
             <form class="p-6 space-y-6">
+                @csrf
                 <!-- Basic Information Section -->
                 <div class="border-b pb-6">
-                    <h3 class="text-lg font-medium text-gray-900 mb-4">Basic Information</h3>
+                    <h3 class="text-lg font-medium text-gray-900 mb-4">Product Creation</h3>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <!-- Product Title -->
                         <div>
@@ -27,14 +28,14 @@
                             <label for="category_id" class="block text-sm font-medium text-gray-700">Category*</label>
                             <select id="category_id" name="category_id" required
                                 class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-teal-500 focus:ring-teal-500 p-2 border">
-                                <option value="">Select Category</option>
-                                <option value="1">Electronics</option>
-                                <option value="2">Fashion</option>
-                                <option value="3">Home & Garden</option>
+                                @foreach ($categories as $category)
+                                    <option value="" selected disabled>select a category for your product</option>
+                                    <option value="{{ $category->slug }}">{{ $category->title }}</option>
+                                @endforeach
                             </select>
                         </div>
 
-                        <!-- Slug -->
+                        {{-- <!-- Slug -->
                         <div>
                             <label for="slug" class="block text-sm font-medium text-gray-700">Slug*</label>
                             <div class="mt-1 flex rounded-md shadow-sm">
@@ -43,7 +44,7 @@
                                 <input type="text" id="slug" name="slug" required
                                     class="block w-full flex-1 rounded-none rounded-r-md border-gray-300 focus:border-teal-500 focus:ring-teal-500 p-2 border">
                             </div>
-                        </div>
+                        </div> --}}
 
                         <!-- Short Description -->
                         <div class="md:col-span-2">

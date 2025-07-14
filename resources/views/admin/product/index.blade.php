@@ -5,7 +5,7 @@
 @section('content')
     <div class="container mx-auto px-4 py-8">
         <div class=" mx-auto bg-white rounded-lg">
-            
+
             <div class="container mx-auto px-4 py-8">
                 <!-- Header and Actions -->
                 <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-6 gap-4">
