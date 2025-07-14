@@ -30,7 +30,7 @@ return new class extends Migration
             $table->string('image')->nullable();
             $table->string('images')->nullable();
             $table->string('keywords')->nullable();
-            $table->string('seo_title')->nullable();
+            $table->string('seo_title')->nullable(); 
             $table->boolean('status')->nullable()->default(0);
             $table->boolean('featured')->nullable()->default(0);
             $table->timestamps();

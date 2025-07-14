@@ -14322,7 +14322,7 @@ input:focus {
 
 #sidebar_links li {
   font-size: 25px !important;
-  color: yellow;
+  /* color: yellow; */
 }
 
 .b-l-primary {

@@ -39,6 +39,10 @@
     <!-- App css -->
     <link id="color" rel="stylesheet" href="{{ asset('dash/css/color-1.css') }}" media="screen" />
     <link rel="stylesheet" href="{{ asset('dash/css/style.css') }}" />
+
+{{-- tailwind css --}}
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
@@ -317,7 +321,7 @@
                                     href="{{ route('admin.dashboard') }}">Dashboard</a></li>
                             <li class="list-group-item"><a class="fs-5"
                                     href="{{ route('admin.categories.index') }}">Categories</a></li>
-                            <li class="list-group-item"><a class="fs-5" href="">Products</a></li>
+                            <li class="list-group-item"><a class="fs-5" href="{{route('admin.products.index')}}">Products</a></li>
                             <li class="list-group-item"><a class="fs-5" href="">Orders</a></li>
                             <li class="list-group-item"><a class="fs-5" href="">Manage Users </a></li>
                             <li class="list-group-item"><a class="fs-5" href="">Customers </a></li>
@@ -339,7 +343,7 @@
             {{--  --}}
 
             @yield('content')
-            
+
 
             {{--  --}}
             {{--  --}}
