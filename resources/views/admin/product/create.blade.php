@@ -26,11 +26,9 @@
                         <!-- Category -->
                         <div>
                             <label for="category_id" class="block text-sm font-medium text-gray-700">Category*</label>
-                            <select id="category_id" name="category_id" required
-                                class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-teal-500 focus:ring-teal-500 p-2 border">
+                            <select name="category_id[]" multiple class="js-example-basic-multiple w-full">
                                 @foreach ($categories as $category)
-                                    <option value="" selected disabled>select a category for your product</option>
-                                    <option value="{{ $category->slug }}">{{ $category->title }}</option>
+                                    <option value="{{ $category->id }}">{{ $category->title }}</option>
                                 @endforeach
                             </select>
                         </div>
@@ -84,7 +82,7 @@
                             </div>
                         </div>
 
-                        <!-- Discount -->
+                        {{-- <!-- Discount -->
                         <div>
                             <label for="discount" class="block text-sm font-medium text-gray-700">Discount (%)</label>
                             <div class="mt-1 relative rounded-md shadow-sm">
@@ -94,7 +92,7 @@
                                     <span class="text-gray-500">%</span>
                                 </div>
                             </div>
-                        </div>
+                        </div> --}}
                     </div>
                 </div>
 
@@ -150,8 +148,7 @@
                                         <label for="image"
                                             class="relative cursor-pointer bg-white rounded-md font-medium text-teal-600 hover:text-teal-500 focus-within:outline-none">
                                             <span>Upload a file</span>
-                                            <input id="image" name="image" type="file" class="sr-only"
-                                                required>
+                                            <input id="image" name="image" type="file" class="sr-only" required>
                                         </label>
                                         <p class="pl-1">or drag and drop</p>
                                     </div>
@@ -243,4 +240,13 @@
             </form>
         </div>
     </div>
+@endsection
+
+
+@section('js')
+    <script>
+        $(document).ready(function() {
+            $('.js-example-basic-multiple').select2();
+        });
+    </script>
 @endsection

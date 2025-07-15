@@ -40,9 +40,13 @@
     <link id="color" rel="stylesheet" href="{{ asset('dash/css/color-1.css') }}" media="screen" />
     <link rel="stylesheet" href="{{ asset('dash/css/style.css') }}" />
 
-{{-- tailwind css --}}
+    {{-- tailwind css --}}
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    {{-- 2select cdn --}}
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+
 </head>
 
 <body>
@@ -321,7 +325,8 @@
                                     href="{{ route('admin.dashboard') }}">Dashboard</a></li>
                             <li class="list-group-item"><a class="fs-5"
                                     href="{{ route('admin.categories.index') }}">Categories</a></li>
-                            <li class="list-group-item"><a class="fs-5" href="{{route('admin.products.index')}}">Products</a></li>
+                            <li class="list-group-item"><a class="fs-5"
+                                    href="{{ route('admin.products.index') }}">Products</a></li>
                             <li class="list-group-item"><a class="fs-5" href="">Orders</a></li>
                             <li class="list-group-item"><a class="fs-5" href="">Manage Users </a></li>
                             <li class="list-group-item"><a class="fs-5" href="">Customers </a></li>
@@ -373,11 +378,14 @@
             </footer>
         </div>
     </div>
+
     <!-- jquery-->
     <script src="{{ asset('dash/js/vendors/jquery/jquery.min.js') }}"></script>
     <!-- bootstrap js-->
     <script src="{{ asset('dash/js/vendors/bootstrap/dist/js/bootstrap.bundle.min.js') }}" defer=""></script>
     <script src="{{ asset('dash/js/vendors/bootstrap/dist/js/popper.min.js') }}" defer=""></script>
+    {{-- 2select js --}}
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
     <!--fontawesome-->
     <script src="{{ asset('dash/js/vendors/font-awesome/fontawesome-min.js') }}"></script>
     <!-- sidebar -->
@@ -409,6 +417,12 @@
     <script src="{{ asset('dash/js/theme-customizer/customizer.js') }}"></script>
     <!-- dashboard_2-->
     <script src="{{ asset('dash/js/dashboard/dashboard_2.js') }}"></script>
+
+
+
+    @yield('js')
+
+
     <!-- custom script -->
     <script src="{{ asset('dash/js/script.js') }}"></script>
 </body>
